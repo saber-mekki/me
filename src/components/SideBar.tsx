@@ -2,6 +2,7 @@ import { Navigation } from "react-minimal-side-navigation";
 import { useHistory, useLocation } from "react-router-dom";
 import Icon from "awesome-react-icons";
 import React, { useState } from "react";
+import mainLogo from'../assets/123.jpg';
 
 import "react-minimal-side-navigation/lib/ReactMinimalSideNavigation.css";
 
@@ -21,7 +22,7 @@ export default function SideBar (){
       />
       <div className="absolute right-0">
         <a href="https://github.com/abhijithvijayan/react-minimal-side-navigation">
-          View on GitHub
+           GitHub
         </a>
       </div>
       {/* Sidebar */}
@@ -30,11 +31,11 @@ export default function SideBar (){
           isSidebarOpen ? "ease-out translate-x-0" : "ease-in -translate-x-full"
         }`}
       >
+        <img src={mainLogo} className="rounded" alt="Cinque Terre"></img>
         <div className="flex items-center justify-center mt-10 text-center py-6">
           <span className="mx-2 text-2xl font-semibold text-black">
-            react-minimal-side-navigation
+            Saber Mekki
           </span>
-          <img src="/home/saber-mekki/Bureau/cv-saber/react-portfolio/public/logo512.png" className="rounded-circle" alt="Cinque Terre"></img>
         </div>
 
         <Navigation
@@ -51,27 +52,32 @@ export default function SideBar (){
             {
               title: "About",
               itemId: "/about",
-              elemBefore: () => <Icon name="user" />,
-              subNav: [
-                {
-                  title: "Projects",
-                  itemId: "/about/projects"
-                },
-                {
-                  title: "Members",
-                  itemId: "/about/members"
-                }
-              ]
+              elemBefore: () => <Icon name="bell" />
             },
             {
-              title: "Another Tab",
-              itemId: "/another",
-              subNav: [
-                {
-                  title: "Teams",
-                  itemId: "/another/teams"
-                }
-              ]
+              title: "Recommendation",
+              itemId: "/recommendation",
+              elemBefore: () => <Icon name="eye" />
+            },
+            {
+              title: "About",
+              itemId: "/about",
+              elemBefore: () => <Icon name="user" />,
+              // subNav: [
+              //   {
+              //     title: "Projects",
+              //     itemId: "/about/projects"
+              //   },
+              //   {
+              //     title: "Members",
+              //     itemId: "/about/members"
+              //   }
+              // ]
+            },
+            {
+              title: "Contact",
+              itemId: "/contact",
+              elemBefore: () => <Icon name="mail" />,
             }
           ]}
         />

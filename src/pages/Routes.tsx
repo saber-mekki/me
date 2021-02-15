@@ -12,19 +12,19 @@ const Routes = () => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/about/members">
+        <Route path="/experience">
           <Experience />
         </Route>
-        <Route path="/about/projects">
+        <Route path="/projects">
           <Projects />
         </Route>
         <Route path="/about">
           <About />
         </Route>
-        <Route path="/another/teams">
+        <Route path="/recommendation">
           <Recommendation  />
         </Route>
-        <Route path="/settings">
+        <Route path="/contact">
           <ContactUs />
         </Route>
         <Route path="/">
