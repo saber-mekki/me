@@ -31,13 +31,15 @@ export default function SideBar (){
           isSidebarOpen ? "ease-out translate-x-0" : "ease-in -translate-x-full"
         }`}
       >
-        <img src={mainLogo} className="rounded" alt="Cinque Terre"></img>
+         
+        <img src={mainLogo} style={{  borderRadius: "50%"}} alt="Cinque Terre"></img>
         <div className="flex items-center justify-center mt-10 text-center py-6">
           <span className="mx-2 text-2xl font-semibold text-black">
             Saber Mekki
           </span>
+        
         </div>
-
+        <span className="email text-center justify-center flex items-center"><i className="icon-mail"></i> saber.mekki6@gmail.com</span>
         <Navigation
           activeItemId={location.pathname}
           onSelect={({ itemId }) => {
@@ -81,7 +83,18 @@ export default function SideBar (){
             }
           ]}
         />
+        
 
+        <div style={{textAlign: "center"}} className="email text-center justify-center flex items-center">
+              <ul>
+                <li><a href="https://www.facebook.com/saber.mekki" target="_blank" rel="noopener noreferrer"><Icon name="facebook" /></a></li>
+                <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><Icon name="twitter" /></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><Icon name="instagram" /></a></li>
+               
+                <li><a href="https://github.com/saber-mekki" target="_blank" rel="noopener noreferrer"><i className="fab fa-github">GitHub</i></a></li>
+     
+              </ul>
+            </div>
         <div className="absolute bottom-0 w-full my-8">
           <Navigation
             activeItemId={location.pathname}
