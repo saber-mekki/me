@@ -62,8 +62,8 @@ export default function SideBar() {
               elemBefore: () => <Icon name="eye" />
             },
             {
-              title: "About",
-              itemId: "/about",
+              title: "Projects",
+              itemId: "/projects",
               elemBefore: () => <Icon name="user" />,
               // subNav: [
               //   {
