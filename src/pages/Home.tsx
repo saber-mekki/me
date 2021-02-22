@@ -33,7 +33,7 @@ export default function Home() {
                     color: "white",
                     fontSize: "47px",
                     textShadow: "8px 0px 18px wheat",
-                    marginLeft: "305px",
+                    marginLeft: "100px",
                   }}>Web Developper</h5>
 
                 </div>
